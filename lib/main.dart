@@ -4,6 +4,8 @@ import 'package:whatsapp/Views/SplashScreen/whatsapp-splash-screen.dart';
 import 'package:whatsapp/Views/authentication/Add-account.dart';
 import 'package:whatsapp/Views/authentication/Login-Screen.dart';
 import 'package:whatsapp/Views/authentication/verification-screen.dart';
+import 'package:whatsapp/Views/home-screen/Call-Screen.dart';
+import 'package:whatsapp/Views/home-screen/Update-Screen.dart';
 import 'package:whatsapp/Views/home-screen/Whatsapp-homescreen.dart';
 import 'package:whatsapp/Views/on-boarding-screen/onboarding-view.dart';
 
@@ -40,10 +42,10 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
 
-      home:LoginScreen()
+      home://LoginScreen()
       //HomeScreen()
       //Addaccount()
-     // WhatsappSplash()
+      WhatsappSplash()
       //Verification(),
    //   OnboardingView()
       //NavBarScreen()
@@ -73,10 +75,9 @@ class _NavBarScreenState extends State<NavBarScreen> {
   [
 
     HomeScreen(),
-    NavHome(),
-    SettingsNav(),
-    SettingsNav(),
-  ];
+    UpdateScreen(),
+    CallScreen(),
+    ];
   
 
   @override
@@ -95,14 +96,14 @@ class _NavBarScreenState extends State<NavBarScreen> {
 
             ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.person),
-              label: 'Profile'
+                icon: Icon(Icons.update),
+              label: 'Update'
 
 
             ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.settings),
-              label: 'Settings'
+                icon: Icon(Icons.call),
+              label: 'Call'
             ),
 
           ]

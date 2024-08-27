@@ -55,7 +55,7 @@ class Verification extends StatelessWidget {
               ],),
             ),
           ],),
-          Mybutton(text: 'Next',buttoncolor: Appcolor.greenishcolor,width:400,bordercircular: 50,
+          Mybutton(text: 'Next',buttoncolor: Appcolor.greenishcolor,width:350,bordercircular: 50,
               ontab: (){
             Get.to(()=>NavBarScreen());
               }),
